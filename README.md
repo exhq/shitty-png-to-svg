@@ -5,4 +5,4 @@ this program takes a png file, and replaces every pixel with a 1 by 1 square, ba
 i know, very useful  
 how to use:  
 in a folder, put an empty html file called "output.html", put your png image and rename it to "input.png". run the py file, it should print "done" when its done, duh  
-### warning: in my experience, pictures bigger than 200pixel cause lag on your broser when its trying to render it. do that at your own risk. im not responsible if your shit catches on fire
+### warning: in my experience, pictures bigger than 200pixels cause lag on your browser when its trying to render it. do that at your own risk. im not responsible if your shit catches on fire
