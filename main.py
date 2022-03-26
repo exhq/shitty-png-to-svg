@@ -1,7 +1,14 @@
+#!/usr/bin/env python3
 #openning the image file
 from PIL import Image as image
 import random
-im = image.open(r"input.png")
+import sys
+
+if len(sys.argv) != 2:
+    print("Please provide input image")
+    exit(1)
+
+im = image.open(sys.argv[1])
 pix = im.load()
 #opening the text file
 file1 = open(r"output.txt","w+")
