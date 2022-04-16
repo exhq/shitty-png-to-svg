@@ -8,8 +8,7 @@ how to use:
 ```bash
 pip install pillow # setup, use pip install --user pillow, if you lack root permissions
 ./main.py <inputfile>
-# hereafter you should find your generated svg in output.txt in the current directory
+# hereafter you should find your generated svg in output.html in the current directory
 ```
 
-after the txt file is done, you can change the file extention to .html or .svg
 ### warning: in my experience, pictures bigger than 200pixels cause lag on your browser when its trying to render it. do that at your own risk. im not responsible if your shit catches on fire
