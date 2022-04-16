@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-#openning the image file
+#opening the image file
+import os
 from PIL import Image as image
 import random
 import sys
@@ -11,7 +12,7 @@ if len(sys.argv) != 2:
 im = image.open(sys.argv[1])
 pix = im.load()
 #opening the text file
-file1 = open(r"output.txt","w+")
+file1 = open(os.path.join(sys.path[0], "output.txt"), "w+")
 def fileprint(x):
     file1.write(x)
 
@@ -26,4 +27,5 @@ for i in range(1 , wid):
             
 #closing tag
 fileprint("</svg>")
+os.rename(os.path.join(sys.path[0], "output.txt"),os.path.join(sys.path[0], "output.html")) 
 print("done")
